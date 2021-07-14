@@ -1,0 +1,427 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700;800&display=swap');
+
+/* General CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+.btn {
+    border: none;
+    outline: none;
+}
+
+/* Utility Area */
+
+.btn {
+    color: #fff;
+    padding: 10px 20px;
+    background: #E02C6D;
+    transition: all .3s ease-in-out;
+}
+
+.btn:hover {
+    background: #ff5f61;
+}
+
+/* HEADER CSS PART */
+
+header {
+    background: #2d25a0;
+    width: 100%;
+    height: 100vh;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 80px;
+}
+
+header .navigation ul {
+    display: flex;
+}
+
+header .navigation ul li {
+    margin-right: 30px;
+}
+
+header .navigation ul li a {
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 16px;
+}
+
+
+header .login a i {
+    margin-right: 10px;
+}
+
+@media(max-width: 992px) {
+    header nav {
+        display: none;
+    }
+}
+
+header .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px;
+
+}
+
+header .hero .left h1 {
+    color: #fff;
+    font-size: 64px;
+    font-weight: 80;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+header .hero .right img {
+    width: 556px;
+    height: 438px;
+    transition: all .5s ease-in-out;
+}
+
+header .hero .right img:hover {
+    transform: translateX(-100px);
+}
+
+@media(max-width: 992px) {
+    header .hero {
+        margin: 0;
+        padding: 50px;
+    }
+
+    header .hero .right img:hover {
+        transform: translateX(0px);
+    }
+}
+
+@media(max-width: 576px) {
+    header .hero {
+        display: block;
+    }
+
+    header {
+        width: 100%;
+        height: 100%;
+
+    }
+
+    header .hero .left h1 {
+        font-size: 40px;
+        font-weight: 50px;
+    }
+
+    header .hero .right img {
+        width: 350px;
+        height: 300px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-left: -50px;
+    }
+
+
+}
+
+
+/* MAIN SECTION CSS */
+.container {
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.players {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 80px;
+    margin-bottom: 100px;
+
+}
+
+.players .player {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+        rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 0 10px;
+    width: 330px;
+
+}
+
+.players .player .player-content {
+    text-align: left;
+
+}
+
+.players .player img {
+    width: 300px;
+    height: 256px;
+}
+
+.players .player h2 {
+    font-size: 28px;
+    line-height: 40px;
+    margin: 15px 0;
+}
+
+.players .player p {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+}
+
+@media(max-width: 768px) {
+    .players {
+        flex-wrap: wrap;
+    }
+}
+
+@media(max-width: 576px) {
+    .players {
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .players .player {
+        margin: 20px 0;
+    }
+
+    .container {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+/* lightlight setion*/
+.highlight {
+    margin: 0 100px;
+}
+
+.highlight .single-highlight {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+
+.highlight .single-highlight .left {
+    width: 469px;
+}
+
+.highlight .single-highlight .left h1 {
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.highlight .single-highlight .left p {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.highlight .single-highlight .right img {
+    width: 100%;
+    height: 100%;
+}
+
+@media(max-width: 768px) {
+    .highlight .single-highlight {
+        display: block;
+        align-self: start;
+
+    }
+
+    .highlight .single-highlight .left {
+        margin-bottom: 100px;
+        width: 100%;
+    }
+
+    .highlight .single-highlight .right img {
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .highlight {
+        margin: 0px;
+    }
+
+}
+
+@media(max-width: 576px) {
+    .single-highlight {
+        margin: 0 10px;
+    }
+
+    .highlight .single-highlight .right img {
+        width: 100%;
+    }
+
+    .highlight {
+        margin: 0;
+    }
+
+}
+
+/* Footer PArt Starting */
+footer {
+    text-align: center;
+    margin-top: 200px;
+}
+
+footer .img img {
+    width: 483.87px;
+    height: 110px;
+}
+
+footer .socials img {
+    width: 32px;
+    height: 32px;
+    margin: 10px 0;
+}
+
+footer p {
+    font-size: 18px;
+    text-align: center;
+
+}
+
+@media (max-width:576px) {
+
+    footer .img img {
+        width: 300.87px;
+        height: 85px;
+    }
+}
+
+
+
+
+/* CELEBRATE */
+
+section.celebrates {
+    background-image: url(../images/tean.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    width: 100%;
+    height: 80vh;
+    position: relative;
+}
+
+section.celebrates:after {
+    position: absolute;
+    content: "";
+    background-color: black;
+    top: 0;
+    right: 0;
+    opacity: 0.5;
+}
+
+section.celebrates .content {
+    text-align: center;
+    padding-top: 200px;
+}
+
+section.celebrates h1 {
+    font-size: 55px;
+
+}
+
+section.celebrates p {
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+@media(max-width: 568px) {
+    section.celebrates .content {
+        text-align: center;
+        padding-top: 50px;
+    }
+
+    section.celebrates h1 {
+        font-size: 30px;
+
+    }
+
+    section.celebrates p {
+        font-size: 16px;
+        padding-bottom: 10px;
+    }
+
+    section.celebrates {
+        width: 100%;
+    }
+}
+
+
+/* Video */
+.video {
+    margin: 100px 100px;
+    margin-bottom: 10px;
+}
+
+.video .all-content {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.video .all-content .left {
+    margin-right: 50px;
+}
+
+.video .all-content .left iframe {
+    width: 500px;
+    height: 300px;
+}
+
+.video .all-content .right h1 {
+    font-size: 40px;
+    padding: 20px 0;
+}
+
+@media(max-width:576px) {
+    .video {
+        margin: 100px 0;
+    }
+
+    .video .all-content {
+        display: block;
+    }
+
+    .video .all-content .right {
+        margin-top: 50px;
+    }
+}
+
+@media(max-width:399px) {
+    .video .all-content .left iframe {
+        width: 100%;
+    }
+}
