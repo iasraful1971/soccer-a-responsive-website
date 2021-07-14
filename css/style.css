@@ -397,13 +397,13 @@ section.celebrates p {
 }
 
 .video .all-content .left iframe {
-    width: 500px;
-    height: 300px;
+    width: 600px;
+    height: 100%;
 }
 
 .video .all-content .right h1 {
     font-size: 40px;
-    padding: 20px 0;
+    padding: 10px 0;
 }
 
 @media(max-width:576px) {
@@ -413,6 +413,7 @@ section.celebrates p {
 
     .video .all-content {
         display: block;
+        margin: 0 20px;
     }
 
     .video .all-content .right {
@@ -420,7 +421,7 @@ section.celebrates p {
     }
 }
 
-@media(max-width:399px) {
+@media(max-width:400px) {
     .video .all-content .left iframe {
         width: 100%;
     }
